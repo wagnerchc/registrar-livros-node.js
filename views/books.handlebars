@@ -1,0 +1,26 @@
+<div class="row justify-content-center align-items-center">
+    <div class="col-10 col-md-6 my-5">
+        <h1 class="text-center">Livros disponíveis</h1>
+        <div class="row justify-content-center">
+            <div class="col-8 col-md-4 mt-3">
+                <a href="/" id="link" class="btn btn-secondary shadow w-100">Adicione novo livro</a>
+            </div>
+        </div>
+    </div>
+</div>
+{{#each books}}
+    <div class="row justify-content-center align-items-center text-center border-bottom my-2">
+        <div class="col-1">
+            <p class="m-0">#{{this.id}}</p>
+        </div>
+        <div class="col-md-5">
+            <p class="m-0 fw-bold">{{this.title}}</p>
+        </div>
+        <div class="col-md-3">
+            <p class="m-0">{{this.pageqty}} páginas</p>
+        </div>
+        <div class="col-6 col-md-3 my-2">
+            <a href="/books/{{this.id}}" class="btn btn-primary shadow w-100">Ver mais</a>
+        </div>
+    </div>
+{{/each}}

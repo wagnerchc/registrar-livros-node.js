@@ -1,0 +1,23 @@
+<div class="row justify-content-center align-items-center">
+    <div class="col-10 col-md-6">
+        <div class="row justify-content-center my-5">
+            <div class="col-auto">
+                <h1 class="text-center">{{book.title}}</h1>
+                <p class="my-5">Este livro tem {{book.pageqty}} páginas.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8 col-md-3 my-2">
+                <a href="/books" id="link" class="btn btn-secondary shadow w-100">Voltar</a>
+            </div>
+            <div class="col-8 col-md-3 my-2">
+                <a href="/books/edit/{{book.id}}" class="btn btn-primary shadow w-100">Editar</a>
+            </div>
+            <div class="col-8 col-md-3 my-2">
+                <form action="/books/remove/{{book.id}}" method="POST">
+                    <input type="submit" value="Excluir" class="btn btn-warning shadow w-100">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,2 +1,2 @@
 # registrar-livros-node.js
- Sistema de registro de livros em banco de dados mysql com Node.js
+ Sistema de registro de livros em Node.js usando banco de dados MySQL
